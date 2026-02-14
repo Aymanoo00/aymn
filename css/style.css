@@ -1,0 +1,46 @@
+body {
+                font-family: 'IBM Plex Sans Arabic', sans-serif;
+                background-color: #FAFAFA;
+            }
+            .template-card.selected {
+                border-color: #C2185B;
+                box-shadow: 0 4px 20px rgba(194, 24, 91, 0.2);
+                transform: translateY(-4px);
+            }
+            .canvas-container {
+                box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            }
+            /* Swiper Customization */
+            .swiper {
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+            }
+            .swiper-slide {
+                position: relative;
+                overflow: hidden;
+                border-radius: 1rem;
+            }
+            .swiper-pagination-bullet-active {
+                background-color: #C2185B !important;
+            }
+            @keyframes slideInBottom {
+                from { transform: translateY(20px); opacity: 0; }
+                to { transform: translateY(0); opacity: 1; }
+            }
+            .slide-in-bottom {
+                animation: slideInBottom 0.5s ease-out forwards;
+            }
+            .delay-100 {
+                animation-delay: 0.1s;
+            }
+            .animate-bounce-slow {
+                animation: bounce 3s infinite;
+            }
+            @keyframes bounce {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-10px); }
+            }
+            .pb-safe {
+                padding-bottom: env(safe-area-inset-bottom);
+            }
